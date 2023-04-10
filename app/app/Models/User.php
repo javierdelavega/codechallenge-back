@@ -74,11 +74,11 @@ class User extends Authenticatable
     }
 
     /**
-     * Prune users created seven days ago
+     * Prune non registered users created seven days ago
      */
     public function prunable(): Builder
     {
-        return static::where('created_at', '<=', now()->subDay(2));
+        return static::where('created_at', '<=', now()->subDay(2))->whereNull('email');;
     }
 
     /**
