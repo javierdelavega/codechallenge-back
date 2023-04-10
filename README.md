@@ -17,7 +17,7 @@ Para la instalación del entorno de desarrollo y pruebas he preparado un contene
 
 ```docker-compose up -d```
 
-NOTA: La primera vez el contenedor tardará en iniciar completamente mientras realiza las tareas de preparación de la BD y la instalación de los paquetes con composer install
+NOTA: La primera vez el contenedor tardará en iniciar completamente de 1-2 minutos, mientras realiza las tareas de preparación de la BD y la instalación de los paquetes con composer install.
 
 Tras la instalación tendremos dos servicios:
 
