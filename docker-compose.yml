@@ -31,10 +31,10 @@ services:
     image: nginx:latest
     restart: unless-stopped
     ports:
-        - "8006:80"
+        - "8006:8080"
     volumes:
         - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
-        - ./frontend:/app
+        - ./frontend:/app/public
   
   app:
     build:
