@@ -16,6 +16,9 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable, Prunable;
 
+
+    const PRUNABLE_DAYS = 7;
+
     /**
      * The attributes that are mass assignable.
      *
@@ -78,7 +81,7 @@ class User extends Authenticatable
      */
     public function prunable(): Builder
     {
-        return static::where('created_at', '<=', now()->subDay(2))->whereNull('email');;
+        return static::where('created_at', '<=', now()->subDay(User::PRUNABLE_DAYS))->whereNull('email');
     }
 
     /**
