@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Codechallenge Shopping Cart API</title>
+    <title>Codechallenge Cart API</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
@@ -148,6 +148,7 @@
     <div class="dark-box"></div>
     <div class="content">
         <h1 id="introduction">Introduction</h1>
+<p>Codechallenge Cart API</p>
 <aside>
     <strong>Base URL</strong>: <code>http://localhost:8005</code>
 </aside>
@@ -760,8 +761,8 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'id' =&gt; 8,
-            'quantity' =&gt; 3,
+            'id' =&gt; 12,
+            'quantity' =&gt; 43,
         ],
     ]
 );
@@ -781,8 +782,8 @@ const headers = {
 };
 
 let body = {
-    "id": 8,
-    "quantity": 3
+    "id": 12,
+    "quantity": 43
 };
 
 fetch(url, {
@@ -899,10 +900,10 @@ fetch(url, {
  &nbsp;
                 <input type="number" style="display: none"
                name="id"                data-endpoint="POSTapi-cart-product"
-               value="8"
+               value="12"
                data-component="body">
     <br>
-<p>Example: <code>8</code></p>
+<p>Example: <code>12</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>quantity</code></b>&nbsp;&nbsp;
@@ -910,10 +911,10 @@ fetch(url, {
  &nbsp;
                 <input type="number" style="display: none"
                name="quantity"                data-endpoint="POSTapi-cart-product"
-               value="3"
+               value="43"
                data-component="body">
     <br>
-<p>Must be at least 1. Example: <code>3</code></p>
+<p>Must be at least 1. Example: <code>43</code></p>
         </div>
         </form>
 
@@ -941,7 +942,7 @@ $response = $client-&gt;put(
         ],
         'json' =&gt; [
             'id' =&gt; 9,
-            'quantity' =&gt; 30,
+            'quantity' =&gt; 87,
         ],
     ]
 );
@@ -962,7 +963,7 @@ const headers = {
 
 let body = {
     "id": 9,
-    "quantity": 30
+    "quantity": 87
 };
 
 fetch(url, {
@@ -1102,10 +1103,10 @@ fetch(url, {
  &nbsp;
                 <input type="number" style="display: none"
                name="quantity"                data-endpoint="PUTapi-cart-product--id-"
-               value="30"
+               value="87"
                data-component="body">
     <br>
-<p>Must be at least 1. Example: <code>30</code></p>
+<p>Must be at least 1. Example: <code>87</code></p>
         </div>
         </form>
 
@@ -1786,12 +1787,12 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 58
+x-ratelimit-remaining: 55
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;token&quot;: &quot;10009|GP2bckYdc46A3wo7Z2TAUQlgLDjSc65jiLlOHWUZ&quot;
+    &quot;token&quot;: &quot;10040|MMB5RB8w7U5zzz4DjjEJwFQdwFFu3PhxmwSbls7H&quot;
 }</code>
  </pre>
     </span>
@@ -2026,7 +2027,7 @@ $response = $client-&gt;post(
         ],
         'json' =&gt; [
             'email' =&gt; 'codechallenge@gmail.com',
-            'password' =&gt; 'dolore',
+            'password' =&gt; 'et',
         ],
     ]
 );
@@ -2047,7 +2048,7 @@ const headers = {
 
 let body = {
     "email": "codechallenge@gmail.com",
-    "password": "dolore"
+    "password": "et"
 };
 
 fetch(url, {
@@ -2186,10 +2187,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-user-login"
-               value="dolore"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>dolore</code></p>
+<p>Example: <code>et</code></p>
         </div>
         </form>
 
@@ -2218,9 +2219,9 @@ $response = $client-&gt;post(
         ],
         'json' =&gt; [
             'email' =&gt; 'codechallenge@gmail.com',
-            'password' =&gt; 'adipisci',
-            'name' =&gt; 'ex',
-            'address' =&gt; 'qui',
+            'password' =&gt; 'laudantium',
+            'name' =&gt; 'iure',
+            'address' =&gt; 'maiores',
         ],
     ]
 );
@@ -2241,9 +2242,9 @@ const headers = {
 
 let body = {
     "email": "codechallenge@gmail.com",
-    "password": "adipisci",
-    "name": "ex",
-    "address": "qui"
+    "password": "laudantium",
+    "name": "iure",
+    "address": "maiores"
 };
 
 fetch(url, {
@@ -2380,10 +2381,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-user-register"
-               value="adipisci"
+               value="laudantium"
                data-component="body">
     <br>
-<p>Example: <code>adipisci</code></p>
+<p>Example: <code>laudantium</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
@@ -2391,10 +2392,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="POSTapi-user-register"
-               value="ex"
+               value="iure"
                data-component="body">
     <br>
-<p>Example: <code>ex</code></p>
+<p>Example: <code>iure</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -2402,10 +2403,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="address"                data-endpoint="POSTapi-user-register"
-               value="qui"
+               value="maiores"
                data-component="body">
     <br>
-<p>Example: <code>qui</code></p>
+<p>Example: <code>maiores</code></p>
         </div>
         </form>
 

@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
-  title: 'Codechallenge Shopping Cart API'
-  description: ''
+  title: 'Codechallenge Cart API'
+  description: 'Codechallenge Cart API'
   version: 1.0.0
 servers:
   -
@@ -276,11 +276,11 @@ paths:
                 id:
                   type: integer
                   description: ''
-                  example: 8
+                  example: 12
                 quantity:
                   type: integer
                   description: 'Must be at least 1.'
-                  example: 3
+                  example: 43
               required:
                 - id
                 - quantity
@@ -345,7 +345,7 @@ paths:
                 quantity:
                   type: integer
                   description: 'Must be at least 1.'
-                  example: 30
+                  example: 87
               required:
                 - id
                 - quantity
@@ -543,11 +543,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 10009|GP2bckYdc46A3wo7Z2TAUQlgLDjSc65jiLlOHWUZ
+                  token: 10040|MMB5RB8w7U5zzz4DjjEJwFQdwFFu3PhxmwSbls7H
                 properties:
                   token:
                     type: string
-                    example: 10009|GP2bckYdc46A3wo7Z2TAUQlgLDjSc65jiLlOHWUZ
+                    example: 10040|MMB5RB8w7U5zzz4DjjEJwFQdwFFu3PhxmwSbls7H
       tags:
         - 'User management'
       security: []
@@ -681,7 +681,7 @@ paths:
                 password:
                   type: string
                   description: ''
-                  example: dolore
+                  example: et
               required:
                 - email
                 - password
@@ -758,15 +758,15 @@ paths:
                 password:
                   type: string
                   description: ''
-                  example: adipisci
+                  example: laudantium
                 name:
                   type: string
                   description: ''
-                  example: ex
+                  example: iure
                 address:
                   type: string
                   description: ''
-                  example: qui
+                  example: maiores
               required:
                 - email
                 - password
