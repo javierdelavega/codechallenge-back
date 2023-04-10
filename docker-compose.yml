@@ -42,7 +42,7 @@ services:
         dockerfile: Dockerfile
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8005/api/products"]
+      test: ["CMD", "curl", "-f", "http://localhost:8005/api/token"]
       interval: 10s
       timeout: 5s
       retries: 100
